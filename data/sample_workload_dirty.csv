@@ -1,0 +1,20 @@
+file_name,size_gb,last_accessed,access_count,workload_type,performance_requirement,current_tier
+good_row.db,100.5,2026-10-01,500,database,high,hot
+  spaced_row.db  , 50 ,2026-09-30, 12 , Analytics ,Medium, warm
+negative_size.dat,-5,2026-09-01,10,logs,LOW,COLD
+text_size.dat,lots,2026-09-01,10,logs,LOW,COLD
+zero_size.dat,0,2026-09-01,10,logs,LOW,COLD
+neg_access.dat,10,2026-09-01,-3,logs,LOW,COLD
+frac_access.dat,10,2026-09-01,2.5,logs,LOW,COLD
+bad_date.dat,10,not-a-date,3,logs,LOW,COLD
+missing_date.dat,10,,3,logs,LOW,COLD
+no_workload.dat,10,2026-09-01,3,,LOW,COLD
+bad_perf.dat,10,2026-09-01,3,logs,URGENT,COLD
+missing_perf.dat,10,2026-09-01,3,logs,,COLD
+,10,2026-09-01,3,logs,LOW,COLD
+bad_tier.dat,10,2026-09-01,3,logs,LOW,LUKEWARM
+missing_tier.dat,10,2026-09-01,3,logs,LOW,
+future_date.dat,10,2030-01-01,3,logs,LOW,COLD
+good_row.db,200,2026-10-02,5,database,HIGH,HOT
+too,many,fields,here,x,y,z,extra
+slash_date.dat,15,09/15/2026,8,backup,LOW,COLD
