@@ -46,15 +46,53 @@ except Exception as e:  # noqa: BLE001
 
 # Candidate function names per stage (first one that exists is used).
 FUNCTION_MAP = {
-    "load": ["load_data", "load_csv", "load_workload", "load_dataset", "read_csv"],
-    "validate": ["validate_data", "validate_dataframe", "validate_workload", "validate"],
-    "analyze": ["analyze_workload", "analyze", "run_analysis", "analyse_workload"],
-    "optimize": ["optimize_storage", "optimize", "run_optimization", "optimize_workload",
-                 "recommend_tiers", "classify_datasets"],
-    "cost": ["calculate_costs", "calculate_cost", "compute_costs", "cost_summary",
-             "calculate_savings"],
-    "migrate": ["simulate_migration", "migration_plan", "generate_migration_plan",
-                "run_simulation", "simulate"],
+    "load": [
+        "load_data",
+        "load_csv",
+        "load_workload",
+        "load_dataset",
+        "read_csv",
+    ],
+
+    "validate": [
+        "validate_data",
+        "validate_dataframe",
+        "validate_workload",
+        "validate",
+    ],
+
+    "analyze": [
+        "analyze_workload",
+        "analyze",
+        "run_analysis",
+        "analyse_workload",
+    ],
+
+    "optimize": [
+        "generate_recommendation",
+        "optimize_storage",
+        "optimize",
+        "run_optimization",
+        "optimize_workload",
+        "recommend_tiers",
+        "classify_datasets",
+    ],
+
+    "cost": [
+        "calculate_costs",
+        "calculate_cost",
+        "compute_costs",
+        "cost_summary",
+        "calculate_savings",
+    ],
+
+    "migrate": [
+        "simulate_migration",
+        "migration_plan",
+        "generate_migration_plan",
+        "run_simulation",
+        "simulate",
+    ],
 }
 
 # --------------------------------------------------------------------------
